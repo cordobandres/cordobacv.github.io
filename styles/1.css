@@ -42,9 +42,15 @@ h1 strong {
 .des {
   position: relative;
   left: 18px;
-  display: flexbox;
-  margin: 0 0 25px;
+  display: flex;
   color: rgb(0, 0, 0);
+  margin-left: 1cm;
+  margin-right: 1cm;
+}
+
+.titulo {
+
+  margin-left: 1cm;
 }
 
 .foto {

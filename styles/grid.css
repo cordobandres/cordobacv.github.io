@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+/* Responsive */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Outfit',  sans-serif;;
+    font-size: 1.2rem;
+    min-height: 100%;
+    background-color:white;
+  }
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.titulo{
+    grid-area: titulo;
+    background-color: lightcyan;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: lightcyan;
+}
+
+.header{
+    grid-area: header;
+    background-color: lightcyan;
+}
+
+.habilidades{
+    grid-area: habilidades;
+    background-color: lightcyan;
+}
+
+.contacto{
+    grid-area: contacto;
+    background-color: lightcyan;
+}
+
+
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template: 
+    "titulo" 500px
+    "header " auto
+    "navbar " auto
+    "habilidades " auto 
+    "contact " auto
+    
+    ;
+
+}
+
+@media (min-width: 600px) {
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "titulo " 600px
+        "header " 300px
+        "navbar " 50px
+        "habilidades " auto
+        "contact" auto
+        
+        ;
+    
+    }
+}
+
+@media (min-width: 900px) {
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template: 
+        "titulo " 450px
+        "header  " 300px
+        "navbar"  100px
+        "habilidades  " auto
+        "contact " 800px
+        
+        ;
+    
+    }
+}
+
+
+/* Estilos */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  text-align: left;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  
+}
+
+.titulo {
+
+    padding: 10px;
+    text-align: center;
+    margin: 1cm 2cm 1cm 2cm;
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 7px solid #5878ca;
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+    }
+    
+
+.pic {
+    width:100%;
+    max-width:300px;
+    height: auto;
+    margin-bottom: 15cm;
+    border-radius: 450px;
+    border: 10px solid hsl(207, 73%, 65%);
+    float: center;
+
+    }
+
+.navbar{
+    height: 100px;
+    text-align: center;
+    margin-left: 1cm;
+    margin-right: 2cm;
+    align-items:initial;
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 7px solid #5878ca;
+    
+}
+
+
+.des {
+    width: auto;
+    color: rgb(0, 0, 0);
+    text-align:justify;
+    margin: 17px 5px 17px 5px;
+    padding-bottom: 10px
+  }
+
+
+
+.header {
+
+    overflow: hidden;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 7px solid #5878ca;
+  }
+  
+.navbar ul {
+    display: flex;
+    height: inherit;
+  }
+
+.navbar ul li {
+    
+    display: block;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    background:hsl(207, 73%, 65%);
+    color: #000;
+    margin: 15px 0cm 1cm 15px;
+    
+  }
+
+ol,
+ul {
+    /* Sacamos margenes */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+img{
+    align-content: initial;
+
+}
+
+.habilities-container {
+   
+    margin: 2px 20px 20px 20px;
+    padding: 0 10px;
+    background-color: lightcyan;
+    margin-top: 0.5cm;
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 7px solid #5878ca;
+  }
+.hability-imageContainer{
+    float: left;
+}
+
+.hability{
+    margin-top: 0.5cm;
+}
+.hability-percentage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+.hability-python {
+    width: 80%;
+    background-color: hsl(207, 73%, 65%);
+  }
+  
+.hability-web {
+    width: 60%;
+    background-color: hsl(207, 73%, 65%);
+  }
+  
+.hability-rpa {
+    width: 50%;
+    background-color: hsl(207, 73%, 65%);
+  }
+  
+.hability-git {
+    width: 60%;
+    background-color: hsl(207, 73%, 65%);
+  }
+  
+.hability-sql{
+    width: 60%;
+    background-color: hsl(207, 73%, 65%);
+  }
+  
+.hability-labview{
+    width: 70%;
+    background-color: hsl(207, 73%, 65%);
+  }
+
+.contacto{
+    padding: 7px;
+    margin-top: 0.5cm;
+}
+.social-link {
+    display:inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+    
+  }
+  
+.social-link.linkedin {
+    margin-top: 0.5cm;
+    background-image: url("../img/linkedin.png");
+  }
+  
+.social-link.wha {
+    margin-top: 0.5cm;
+    background-image: url("../img/wha.png");
+  }
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    padding-inline-start: 0.5em;
+  }
+  
+.form label span {
+    color: #da1414;
+  }
+  
+.form input,
+.form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    border: 1px solid #858c94;
+  }
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+.contact {
+    background-color: lightcyan;
+    border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 7px solid #5878ca;
+  }
+
+.red{
+    text-align: center;
+    border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 9px solid #5878ca;
+    background-color: rgb(166, 247, 247);
+}
+  
+.enviar {
+    min-width: 130px;
+    height: 40px;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid gold;
+    background: gold;
+    margin-bottom: 2cm;
+  }
+
+.footer {
+    margin-top: 0.5cm;
+}

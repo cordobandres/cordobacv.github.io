@@ -76,7 +76,7 @@ body {
         display: grid;
         gap: 10px;
         grid-template: 
-        "titulo " 600px
+        "titulo " 200px
         "header " 300px
         "navbar " 50px
         "habilidades " auto
@@ -131,7 +131,6 @@ h1 {
 
     padding: 10px;
     text-align: center;
-    margin: 1cm 2cm 1cm 2cm;
     overflow: hidden;
     border-radius: 35px 0px 35px 0px;
     -moz-border-radius: 35px 0px 35px 0px;
@@ -180,7 +179,8 @@ h1 {
 
 
 .header {
-
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
     overflow: hidden;
     border-radius: 35px 0px 35px 0px;
     -moz-border-radius: 35px 0px 35px 0px;
@@ -273,9 +273,10 @@ img{
     background-color: hsl(207, 73%, 65%);
   }
 
-.contacto{
+.contact{
     padding: 7px;
-    margin-top: 0.5cm;
+    margin: 0.2cm 0.5cm 0.5cm 0.2cm;
+    
 }
 .social-link {
     display:inline-block;
